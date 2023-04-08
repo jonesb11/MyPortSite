@@ -1,6 +1,6 @@
 :root {
   --lightPink:rgb(204,66,188);
-  --darkPurple:rgba(35, 5, 89, 0.2);
+  --darkPurple:rgba(35, 5, 89, 0.05);
 }
 
 * {
@@ -66,16 +66,14 @@ body {
   background: var(--darkPurple);
   border: 2px rgba(145, 86, 204, 0.2) solid;
   box-shadow: 0px 0px 500px 30px rgba(170, 0, 255, 0.8);
-  border-radius: 20px;
   padding: 20px 20px;
   margin: 0px 15%;
-  margin-top: 120px;
-  height: 400px;
+  margin-top: 80px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
 }
 .Hero_div .Info_div {
-  background: red;
   width: 40%;
 }
 .Hero_div .Info_div h1 {
@@ -94,6 +92,22 @@ body {
   font-style: italic;
 }
 .Hero_div .Bubble_div {
-  background: green;
   width: 60%;
+}
+.Hero_div .Bubble_div .Cloud {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Hero_div .Bubble_div .Cloud .tagcloud {
+  font-size: 20px;
+  font-weight: 650;
+  color: white;
+  margin: 0;
+}
+.Hero_div .Bubble_div .Cloud .tagcloud--item:hover {
+  color: var(--lightPink);
+  font-size: large;
 }/*# sourceMappingURL=style.css.map */
