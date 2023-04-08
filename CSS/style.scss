@@ -74,29 +74,45 @@ body{
     background: var(--darkPurple);
     border: 2px rgba(145, 86, 204, 0.2) solid;
     box-shadow: 0px 0px 500px 30px rgba(170, 0, 255, 0.8);
-    
     border-radius: 20px;
     padding: 20px 20px;
     margin: 0px 15%;
     margin-top: 120px;
+    height: 400px;
 
+
+
+
+    display: flex;
+    justify-content: space-between;
+
+    .Info_div{
+        background: red;
+        width: 40%;
+
+        h1{
+            color: var(--lightPink);
+        }
+        
+        #nameSpan{
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 4.5rem;
+        }
     
-    h1{
-        color: var(--lightPink);
-    }
+        #jobSpan{
+            font-size: 2rem;
+            font-style: italic;
+        }
     
-    #nameSpan{
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 4.5rem;
+        #degreeSpan{
+            font-size: 1.5rem;
+            font-style: italic;
+        }
     }
 
-    #jobSpan{
-        font-size: 2rem;
-        font-style: italic;
-    }
+    .Bubble_div{
+        background: green;
+        width: 60%;
 
-    #degreeSpan{
-        font-size: 1.5rem;
-        font-style: italic;
     }
 }
