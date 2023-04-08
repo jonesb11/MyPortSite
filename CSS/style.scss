@@ -24,11 +24,16 @@ body{
 .HeadContainer{
     width: 100%;
     padding: 0 2.5%;
+    box-shadow: 0 0 100px 20px rgb(68, 3, 112);
+    border-bottom: 2px solid black;
+
+    
 
     #Header{
         height: 80px;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: flex-end;
         
         .Logo{
             color: white;
@@ -36,6 +41,9 @@ body{
             display: flex;
             align-items: center;
             white-space: pre;
+            margin-left: 10px;
+
+            margin-right: auto;
             #blinker{
                 animation: blinkerAnim 1.5s linear infinite;
 
@@ -51,6 +59,7 @@ body{
             list-style-type: none;
             display: flex;
             align-items: center;
+
 
 
             li{
@@ -76,69 +85,77 @@ body{
     border: 2px rgba(145, 86, 204, 0.2) solid;
     box-shadow: 0px 0px 500px 30px rgba(170, 0, 255, 0.8);
     // border-radius: 20px;
-    
     padding: 20px 20px;
-    margin: 0px 15%;
-    margin-top: 80px;
-
-    height: 500px;
-
-
-
-
-
+    // margin: 0px 15%;
+    // margin-top: 10px;
+    width: 100%;
+    // height: 600px;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    .Info_div{
-        // background: red;
+    align-items: center;
 
-        width: 40%;
-
-        h1{
-            color: var(--lightPink);
-        }
-        
-        #nameSpan{
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 4.5rem;
-        }
+    .inner_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
-        #jobSpan{
-            font-size: 2rem;
-            font-style: italic;
-        }
-    
-        #degreeSpan{
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-    }
+        width: 70%;
 
-    .Bubble_div{
-        // background: green;
-
-        width: 60%;
-
-        .Cloud{
-            display: flex;
+        .Info_div{
+            // background: red;;
             height: 100%;
-
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-
-            .tagcloud {
-                font-size: 20px;
-                font-weight: 650;
-                color: white;
-                margin: 0;
-              }
-              .tagcloud--item:hover {
+            width: 50%;
+    
+            h1{
                 color: var(--lightPink);
-                font-size: large;
-
-              }
+            }
+            
+            #nameSpan{
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 4.5rem;
+            }
+        
+            #jobSpan{
+                font-size: 2rem;
+                font-style: italic;
+            }
+        
+            #degreeSpan{
+                font-size: 1.5rem;
+                font-style: italic;
+            }
         }
+    
+        .Bubble_div{
+            // background: green;
+            height: 100%;
+            width: 50%;
+
+    
+            .Cloud{
+                display: flex;
+                height: 100%;
+    
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+    
+                .tagcloud {
+                    font-size: 20px;
+                    font-weight: 650;
+                    color: white;
+                    margin: 0;
+                  }
+                  .tagcloud--item:hover {
+                    color: var(--lightPink);
+                    font-size: large;
+    
+                  }
+            }
+        }
+
     }
+
 }
