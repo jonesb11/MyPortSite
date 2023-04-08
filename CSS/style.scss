@@ -1,7 +1,8 @@
 // $font = 204, 66, 188;
 :root{
     --lightPink:rgb(204,66,188);
-    --darkPurple:rgba(35, 5, 89, 0.2);
+    --darkPurple:rgba(35, 5, 89, 0.05);
+    
 
     // --darkPurple:rgba(47, 18, 140, 0.8);
 }
@@ -74,11 +75,14 @@ body{
     background: var(--darkPurple);
     border: 2px rgba(145, 86, 204, 0.2) solid;
     box-shadow: 0px 0px 500px 30px rgba(170, 0, 255, 0.8);
-    border-radius: 20px;
+    // border-radius: 20px;
+    
     padding: 20px 20px;
     margin: 0px 15%;
-    margin-top: 120px;
-    height: 400px;
+    margin-top: 80px;
+
+    height: 500px;
+
 
 
 
@@ -87,7 +91,8 @@ body{
     justify-content: space-between;
 
     .Info_div{
-        background: red;
+        // background: red;
+
         width: 40%;
 
         h1{
@@ -111,8 +116,29 @@ body{
     }
 
     .Bubble_div{
-        background: green;
+        // background: green;
+
         width: 60%;
 
+        .Cloud{
+            display: flex;
+            height: 100%;
+
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            .tagcloud {
+                font-size: 20px;
+                font-weight: 650;
+                color: white;
+                margin: 0;
+              }
+              .tagcloud--item:hover {
+                color: var(--lightPink);
+                font-size: large;
+
+              }
+        }
     }
 }
