@@ -1,0 +1,88 @@
+:root {
+  --lightPink:rgb(204,66,188);
+  --darkPurple:rgba(35, 5, 89, 0.2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(135deg, rgb(12, 58, 127), rgb(131, 18, 207) 99%);
+}
+
+.HeadContainer {
+  width: 100%;
+  padding: 0 2.5%;
+}
+.HeadContainer #Header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.HeadContainer #Header .Logo {
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  white-space: pre;
+}
+.HeadContainer #Header .Logo #blinker {
+  animation: blinkerAnim 1.5s linear infinite;
+}
+@keyframes blinkerAnim {
+  50% {
+    opacity: 0;
+  }
+}
+.HeadContainer #Header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.HeadContainer #Header ul li {
+  display: inline-flex;
+  padding: 0 15px;
+}
+.HeadContainer #Header ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--lightPink);
+}
+.HeadContainer #Header ul li a .index {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.Hero_div {
+  background: var(--darkPurple);
+  border: 2px rgba(145, 86, 204, 0.2) solid;
+  box-shadow: 0px 0px 500px 30px rgba(170, 0, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 0px 15%;
+  margin-top: 120px;
+}
+.Hero_div h1 {
+  color: var(--lightPink);
+}
+.Hero_div #nameSpan {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 4.5rem;
+}
+.Hero_div #jobSpan {
+  font-size: 2rem;
+  font-style: italic;
+}
+.Hero_div #degreeSpan {
+  font-size: 1.5rem;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */
